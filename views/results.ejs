@@ -1,0 +1,22 @@
+<%- include ('partials/header.ejs'); -%>
+<div class="jumbotron">
+	<h2 class="text-center ">
+	Results with the search term <strong>"<%= query %>"</strong>
+</h2>
+</div>
+	<div class="search-results">
+		<% data["Search"].forEach(function(movie){ %>
+		  <div class="thumbnail-text text-center">
+				<img src="<%= movie["Poster"] %>">
+				<div class="main-caption">
+					<p>Title: <strong><%= movie["Title"] %></strong></p>
+					<p>Year: <strong><%= movie["Year"] %></strong></p>
+				</div>
+		  </div>
+	  <% }) %>
+  </div>
+<a href="/search" class="btn btn-md btn-default btn-primary">Search again</a>
+
+<%- include ('partials/footer.ejs'); -%>
+
+	

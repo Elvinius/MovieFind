@@ -1,0 +1,29 @@
+<%- include ('partials/header.ejs'); -%>
+
+
+
+<div class="jumbotron">
+	<h1 class="text-center">
+	Search for a movie
+</h1>
+
+<form action="/results" method="GET" class="input-group">
+	<label for="search-term">Add The Search Term</label>
+	<input id ="search-term" class="form-control" type="text" placeholder="Search term" name="search">
+	<input class="btn btn-md btn-default btn-block btn-primary" type="submit" value="Submit" >
+</form>
+</div>
+		<div class="flex-container">
+			<img src="images/malena.jpg" alt="A scene from 'Malena'">
+			<img src="images/irishman.jpg" alt="A scene from 'Irishman'">
+			<img src="images/amadeus.jpg" alt="A scene from 'Amadeus'">
+			<img src="images/Schindlers-List.jpg" alt="A scene from 'Schindler's list'">
+			<img src="images/skini.jpg" alt="A scene from 'The skin I live in'">
+			<img src="images/lui.jpg" alt="Louis de Funes">
+			<img src="images/joker.jpg" alt="A scene from 'Dark Knight'">
+			<img src="images/lifeis.jpg" alt="A scene from 'Life is beautiful'">
+			<img src="images/fountain.jpg" alt="A scene from 'Fountain'">
+			
+		</div>
+
+<%- include ('partials/footer.ejs'); -%>
